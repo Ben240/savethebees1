@@ -1,11 +1,54 @@
-<html>
-    <body style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
-        <a href="aboutme.html">About Me</a>
-        <h1 style="color: blue;">Save the Bees!</h1>
-        <p style="font-style: italic;">We want to save the bees!</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bees</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Save the Bees!</h1>
+    </header>
+    <nav>
+        <a href="index.html">HOME</a> |
+        <a href="aboutme.html">ABOUT ME</a> |
+        <a href="">FORM</a> |
+        <a href="">PETITION</a>
+    </nav>
+    <section>
+        <h2>We want to save the bees!</h2>
         <div id="saveit">
             <input id="savewhat" placeholder="Type in your cause..." type="text">
             <button onclick="document.getElementById('saveit').innerText = 'Save the ' + document.getElementById('savewhat').value + '!'">Click Me!</button>
         </div>
-    </body>
+    </section>
+    <section>
+        <h2>Bees are endangered</h2>
+        <ul class="list-cause">
+            <li>Plant more flowers</li>
+            <li>Sponsor a beehive locally</li>
+            <li>Stop using pesticides</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Image Gallery</h2>
+        <div class="gallery">
+            <img src="./img/bee-flower.jpg" alt="bee on flower">
+            <div class="desc">Bee on a flower</div>
+        </div>
+        <div class="gallery">
+            <img src="./img/bee-pollen.jpg" alt="bee full of pollen">
+            <div class="desc">Bee full of pollen</div>
+        </div>
+        <div class="gallery">
+            <img src="./img/bee-smoke.JPG" alt="bee caretaker">
+            <div class="desc">Bee's caretaker</div>
+        </div>
+    </section>
+    <footer>
+        <p class="creator">Created by: Ben</p>
+    </footer>
+</body>
+
 </html>
